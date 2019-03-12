@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace task_board_assistant_sample
+namespace TaskBoardAssistantSample
 {
-    class Program
+    class Sample
     {
         static void Main(string[] args)
         {
