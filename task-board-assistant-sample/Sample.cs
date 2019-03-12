@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TaskBoardAssistant;
 
 namespace TaskBoardAssistantSample
 {
@@ -10,6 +11,7 @@ namespace TaskBoardAssistantSample
     {
         static void Main(string[] args)
         {
+            Assistant.ExecuteFromYmlPath("../../policy.yml");
         }
     }
 }
