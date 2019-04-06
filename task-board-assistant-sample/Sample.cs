@@ -11,7 +11,7 @@ namespace TaskBoardAssistantSample
     {
         static void Main(string[] args)
         {
-            Assistant.ExecuteFromYmlPath("../../policy.yml");
+            Assistant.ExecuteFromPath("../../trelloPolicy.json");
         }
     }
 }

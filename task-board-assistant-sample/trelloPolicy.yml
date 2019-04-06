@@ -1,6 +1,6 @@
-﻿provider: github
+﻿provider: trello
 policies:
-  - name: archive-cards-in-done
+  - name: create-weekly-cards
     resource: board
     filters:
       - name: personal
@@ -8,19 +8,10 @@ policies:
       - resource: list
         filters:
           - name: done
-        children:
-          - resource: card
-            actions:
-              - type: archive
-  - name: archive-cards-in-done
-    resource: board
-    filters:
-      - name: work
-    children:
-      - resource: list
-        filters:
-          - name: done
-        children:
-          - resource: card
-            actions:
-              - type: archive
+        actions:
+          - type: addcard
+            params: {
+              name: "Visit someone in the ward",
+              due: "Tuesday@20:00",
+            }
+ 
